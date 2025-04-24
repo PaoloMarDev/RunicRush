@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+section{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    width: 86%;
+    height: 86%;
+    top: 13%;
+    left: 13%;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .ElementoAulify{
+    display: flex;
+    height: 86%;
+    width: 86%;
+    position: absolute;
+    z-index: -1;
+  }
