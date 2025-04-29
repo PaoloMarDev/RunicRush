@@ -11,9 +11,8 @@ const DashBoard = () => {
             <img src={AulifyElement_1} />
           </div>
           <NavBar />
-    
+          
           <section>
-            <Estadisticas/>
             <Leaderboard/>
           </section>
         </div>
