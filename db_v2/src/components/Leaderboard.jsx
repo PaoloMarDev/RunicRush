@@ -36,21 +36,6 @@ const Leaderboard = () => {
               <tr>
               <td>5</td><td>Player 5</td><td>800m</td><td>25</td><td>20</td><td>120</td>
               </tr>
-              <tr>
-              <td>6</td><td>Player 6</td><td>800m</td><td>25</td><td>20</td><td>120</td>
-              </tr>
-              <tr>
-              <td>7</td><td>Player 7</td><td>800m</td><td>25</td><td>20</td><td>120</td>
-              </tr>
-              <tr>
-              <td>8</td><td>Player 8</td><td>800m</td><td>25</td><td>20</td><td>120</td>
-              </tr>
-              <tr>
-              <td>9</td><td>Player 9</td><td>800m</td><td>25</td><td>20</td><td>120</td>
-              </tr>
-              <tr>
-              <td>10</td><td>Player 10</td><td>800m</td><td>25</td><td>20</td><td>120</td>
-              </tr>
           </tbody>
         </table>
   </div>

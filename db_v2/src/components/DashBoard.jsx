@@ -13,6 +13,7 @@ const DashBoard = () => {
           <NavBar />
           
           <section>
+            <Estadisticas/>
             <Leaderboard/>
           </section>
         </div>
