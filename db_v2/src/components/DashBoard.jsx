@@ -4,11 +4,14 @@ import Leaderboard from './Leaderboard'
 
 import AulifyElement_1 from '../public/ElementosAulify.png'
 
+
+import '../App.css'
+
 const DashBoard = () => {
     return (
-        <div>
+        <div className='content'>
           <div className='ElementoAulify'>
-            <img src={AulifyElement_1} />
+            <img src={AulifyElement_1} alt="Imagen de fondo"/>
           </div>
           <NavBar />
           

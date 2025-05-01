@@ -1,7 +1,30 @@
+import { useEffect, useState } from "react"
+import { Link, Outlet } from "react-router-dom"
 
 import './Leaderboard.css'
 
+import Rank from './Rank'
+
 const Leaderboard = () => {
+
+  const [ playerInfo, setplayerInfo] = useState([])
+
+     // UseEffect Traer los usuario de nuestra base
+     useEffect(() => {
+         fetch('https://x7a34rbozg.execute-api.us-east-1.amazonaws.com/getLeaderboard', {
+             method: "GET",
+             headers: {
+                authorization: `Bearer ${localStorage.getItem('tokenAulify')}`
+            }
+         })
+         .then(data => data.json())
+         .then((data) => {
+          setplayerInfo(data)
+         })
+         .catch((error) => {
+          console.error('Error al obtener datos:', error);
+        })
+     }, [])
 
   
   return (
@@ -16,26 +39,10 @@ const Leaderboard = () => {
               <th>Jugador</th>
               <th>Distancia</th>
               <th>Partidas</th>
-              <th>Monedas</th>
-              <th>Racha de Días</th>
               </tr>
           </thead>
           <tbody>
-              <tr>
-              <td>🥇</td><td>Player 1</td><td>3587m</td><td>54</td><td>120</td><td>120</td>
-              </tr>
-              <tr>
-              <td>🥈</td><td>Player 2</td><td>2984m</td><td>83</td><td>101</td><td>120</td>
-              </tr>
-              <tr>
-              <td>🥉</td><td>Player 3</td><td>1800m</td><td>10</td><td>80</td><td>120</td>
-              </tr>
-              <tr>
-              <td>4</td><td>Player 4</td><td>800m</td><td>25</td><td>20</td><td>120</td>
-              </tr>
-              <tr>
-              <td>5</td><td>Player 5</td><td>800m</td><td>25</td><td>20</td><td>120</td>
-              </tr>
+              {playerInfo.slice(0,6).map( (usuario, index) => <Rank key={usuario.userId} usuario = { usuario } position={index + 1} />)} 
           </tbody>
         </table>
   </div>

@@ -75,7 +75,8 @@ form{
   }
   
   .login-form input[type="email"],
-  .login-form input[type="password"] {
+  .login-form input[type="password"],
+  .login-form input[type="namertag"]{
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;

@@ -5,7 +5,6 @@ import Login from './components/Login.jsx'
 import DashBoard from './components/DashBoard.jsx'
 import ProtectedRoute from './components/ProtectedRoute.jsx'
 
-import './App.css'
 
 function App() {
   return (
