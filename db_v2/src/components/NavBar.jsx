@@ -12,10 +12,14 @@ const NavBar = () => {
 
   
   return (
-    <div className='content'>
+    <div className='content-navbar'>
         <header className='menuPlace'>
+          <a href="https://www.aulify.mx" target="_blank" className='Aulify'>
             <img src={logoAulify} alt="Foto de perfil o logo de Aulify" className='Aulify'/>
-            <img src={logoAulifyGames} alt="Foto de perfil o logo de Aulify" className='AulifyGames'/>  
+          </a>
+            <a href="https://www.aulify.mx/videojuegos" className='AulifyGames' target="_blank">
+              <img src={logoAulifyGames} alt="Foto de perfil o logo de Aulify" className='AulifyGames'/>  
+            </a>
         </header>
 
         <header className='navbar'>

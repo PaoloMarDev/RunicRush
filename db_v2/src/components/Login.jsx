@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom"
 import './Login.css'
 
 import logoGame from '../public/RunicRushLogo.png'
+import AulifyLogo from '../public/AulifyLogo.png'
 
 const Login = () => {
     const formulario = useRef(null)

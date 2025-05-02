@@ -10,9 +10,7 @@ import '../App.css'
 const DashBoard = () => {
     return (
         <div className='content'>
-          <div className='ElementoAulify'>
-            <img src={AulifyElement_1} alt="Imagen de fondo"/>
-          </div>
+          <img className='ElementoAulify' src={AulifyElement_1} alt="Imagen de fondo"/>
           <NavBar />
           
           <section>

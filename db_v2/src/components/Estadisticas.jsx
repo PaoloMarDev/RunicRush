@@ -104,40 +104,26 @@ const Estadisticas = () => {
     }, [])
     
     return (
-      <div>
-      <div className="card">
-        <div className='stats'>
-          <img className="avatar" src={Personaje} alt="Personaje" />
-          <div className="info">
-            <div className='stats-info'>
-
-            <div className="stats-stickers">
-              <div className="stickers">
+        <div className="card">
+          <div className='stats'>
+            <img className="avatar" src={Personaje} alt="Personaje" />
+            <div className="info">
+              <div className='stats-info'>
+                <img className="sticker-image" src={info?.image} alt="Icono stickers" />
                 <strong>{info?.name}</strong> 
                 <p>Último Sticker desbloqueado</p>
-              </div>
-              <img className="" src={info?.image} alt="Icono stickers" />
-            </div>
-
-            <div className="stats-middle">
-              <div>
                 <strong>{coins?.coins}</strong>
                 <p>Monedas</p>
-              </div>
-              <div>
                 <strong>{partidas?.totalGames}</strong>
                 <p>Partidas</p>
               </div>
-            </div>
-            </div>
-            <div className="stats-bottom">
-            <strong className="score">{topdistance?.distanceRecord}</strong><br /><p>Distancia Máxima</p>
+              <div className="stats-bottom">
+              <strong className="score">{topdistance?.distanceRecord}</strong><br /><p>Distancia Máxima</p>
+              </div>
             </div>
           </div>
-        </div>
-        <p className="username">{userName?.gamerTag}</p>
+          <p className="username">{userName?.gamerTag}</p>
       </div>
-    </div>
   )
 }
 

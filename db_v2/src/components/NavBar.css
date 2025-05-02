@@ -1,15 +1,29 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-  }
-
-  .content{
+  .content-navbar{
     display: flex;
     position: absolute;
     width: 100%;
     height: 100%;
+  }
+  
+  .menuPlace{
+    display: flex;
+    width: 13vw;
+    padding: 10px;
+    flex-direction: column;
+    background: linear-gradient(to right, #4e9dfc, #235dd8);
+    box-shadow: 4 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .Aulify{
+    height: auto;
+    width: 100%;
+  }
+  
+  .AulifyGames{
+    height: auto;
+    width: 100%;
+    margin-top: auto;
   }
 
   .navbar{
@@ -24,31 +38,11 @@
 }
 
 .RunicRushLogo{
-  height: 100px;
   width: 100px;
+  height: auto;
   margin-right: 25px;
 }
 
-.menuPlace{
-  display: flex;
-  width: 13vw;
-  padding: 10px;
-  flex-direction: column;
-  align-items: center;
-  background: linear-gradient(to right, #4e9dfc, #235dd8);
-  box-shadow: 4 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.Aulify{
-  height: auto;
-  width: 100%;
-}
-
-.AulifyGames{
-  height: auto;
-  width: 100%;
-  margin-top: auto;
-}
 
 h1{
   padding: 25px;
